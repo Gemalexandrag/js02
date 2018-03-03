@@ -1,13 +1,31 @@
 <html>
 <head>
-<script>
-let adjective = "tired";
-let noun = "coffee";
 
-consle.console.log(`have you ever been ${adjective} , I drink ${coffee}`);
-</script>
 </head>
 <body>
+adj
+ <input id = "adj" type = "text">
+ noun
+  <input id = "noun" type = "text">
 
+    <button> generate sentence </button>
+
+    <div></div>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+
+  $("button").click(()=>{
+    let adj = $("input#adj").val();
+    let noun = $("input#noun").val();
+    let sentence = `have you ever had ${adj} ${noun}`;
+
+    //do something
+    $("div").html(sentence);
+  })
+
+</script>
 </html>
