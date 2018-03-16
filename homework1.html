@@ -6,24 +6,49 @@
       </script>
 </head>
 <body>
-url
 
- <input id = "picURL" type = "text"> </input>
 
+<h1 id="UR">URL</h1>
+ <input id = "picURL" type = "text">
+ <h1 id="caption">CAPTION</h1>
+ <input id = "cap" type = "text">
+ <h1 id="width">WIDTH</h1>
+ <input id = "wid" type = "text">
 
     <button> image </button>
 
     <p></p>
 </body>
+<style>
+ body{
+   background-color: cyan;
+ }
 
+ #cap{
+   background-color: yellow;
+ }
+
+ #wid{
+   background-color: yellow;
+ }
+
+ #UR{
+   color:#0099ff;
+
+ }
+</style>
 <script>
 
-  $("button").on("click",()=>{
+  $("button").click(()=>{
     const response = $("input#picURL").val();
-    $("p").html("<img src = '"+ response + response +"'></img>")
+    const caption = $("input#cap").val();
+    const width = $("input#wid")
+    $("p").append("<img src = '"+ response + width +"'></img><br>"+ caption)
+
+
 
     //do something
-          
+
   })
 
 </script>
