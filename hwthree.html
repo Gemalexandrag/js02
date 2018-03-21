@@ -1,0 +1,38 @@
+<html>
+<head>
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+
+
+</head>
+<body>
+  <h1 id="kid">name</h1>
+   <input id = "name" type = "text">
+   <h1 id="he">healthy</h1>
+   <input id = "healthy" type = "text">
+
+ <p></p>
+
+<button>?????????</button>
+
+
+
+
+</body>
+
+<script>
+
+  $("button").click(()=>{
+    const name = $("input#name").val();
+    const healthy = $("input#healthy").val();
+   $("p").append("<p  = '"+ name + healthy +"'></p><br>" )
+
+
+
+    //do something
+
+  })
+
+</script>
+</html>
