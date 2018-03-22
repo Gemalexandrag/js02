@@ -12,22 +12,38 @@
    <h1 id="he">healthy</h1>
    <input id = "healthy" type = "text">
 
+
+     <ul>
+	<lh>Healthy </lh>
+  <li id="heal"></li>
+	</ul>
+  <ul>
+  <lh>Unhealthy </lh>
+  <li id="unheal"></li>
+	</ul>
+
  <p></p>
 
 <button>?????????</button>
 
-
-
-
-</body>
 
 <script>
 
   $("button").click(()=>{
     const name = $("input#name").val();
     const healthy = $("input#healthy").val();
-   $("p").append("<p  = '"+ name + healthy +"'></p><br>" )
 
+
+
+    if (healthy < 98) {
+     	$("#heal").append(name);
+     }
+     if (healthy > 98) {
+     	$("#unheal").append(name);
+    }
+
+
+ })
 
 
     //do something
@@ -35,4 +51,8 @@
   })
 
 </script>
+
+</body>
+
+
 </html>
