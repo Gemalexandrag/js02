@@ -21,11 +21,12 @@ $(document).ready(() => {
       $("#heal").append("<img src = '"+ response + "'></img><br>")
       $("#unheal").append(name + "<br>");
       $("#sadFace").append("<img src='http://media.philstar.com/images/the-philippine-star/lifestyle/young-star/20151023/Emoji-5E.jpg' width = '100px' hight = '100px'>")
-      $("#unheal").css('color', 'red');
       $("#unheal").css('background-color', 'green');
       $("#unheal").css('font-size', '50px');
 
     }
-
+    if (healthy => 103) {
+      $("#unheal").css('color', 'red');
+    }
   })
 })
