@@ -1,0 +1,84 @@
+<html>
+ <head>
+          <link rel="icon" href="http://www.stickpng.com/assets/images/5895d2d7cba9841eabab6078.png">
+   <style>
+    body{
+   background-image:    url("https://vignette.wikia.nocookie.net/kingarthur/images/e/e9/The_Magic.jpg/revision/latest?cb=20170412185454");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+    p{
+      color: white;
+      font-size: 50px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 100px;
+    }
+
+   </style>
+       <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+  </script>
+ </head>
+ <body>
+
+   <center><h1>THE MAGIC 8 BALL</h1><center>
+         <center><img src = "http://www.pages.drexel.edu/~cjb356/cs164/lab8/8ball.png" width="500px"/></center>
+     <p></p>
+
+<script>
+
+ const outputs = [
+     "Reply hazy try again"
+     ,
+     "Ask again later"
+     ,
+     "Better not tell you now"
+     ,
+     "Reply hazy try again"
+     ,
+     "Cannot predict now"
+     ,
+     "Concentrate and ask again"
+     ,
+     "It is certain"
+     ,
+     "It is decidedly so"
+     ,
+     "Without a doubt"
+     ,
+     "Yes, definitely"
+     ,
+     "You may rely on it"
+     ,
+     "As I see it, yes"
+     ,
+     "Most likely"
+     ,
+     "Outlook good"
+     ,
+     "Yes"
+     ,
+     "Signs point to yes"
+     ,
+     "Don’t count on it"
+     ,
+     "My reply is no"
+     ,
+     "My sources say no"
+     ,
+     "Outlook not so good"
+     ,
+     "Very doubtful"
+ ]
+  $("img").click(()=>{
+var Answer = outputs[Math.floor(Math.random() * 4)];
+$("p").html("<center>" + "<p>" +  Answer + "</p>" + "</center>")
+ })
+</script>
+</body>
+</html>

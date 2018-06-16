@@ -1,0 +1,83 @@
+<html>
+
+<head>
+         <link rel="icon" href="http://www.stickpng.com/assets/images/5895d2d7cba9841eabab6078.png">
+  <style>
+
+      body {
+    background-image:    url("https://i.ytimg.com/vi/SynzKC4fWp0/maxresdefault.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
+
+
+    h1 {
+      color:white;
+    }
+
+    h3 {
+      color:white;
+    }
+
+    li{
+      color: white;
+    }
+
+
+  </style>
+
+  <center><h1>KEEP TRACK OF PEOPLE YOU LIKE</h1></center>
+  <link rel="stylesheet" href="hwthree.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+  </script>
+  <script src="hwthree.js"></script>
+
+</head>
+</head>
+
+<body>
+  <h3>name</h3>
+  <input id="name" type="text">
+  <h3>status</h3>
+  <input id="status" type="text">
+  <h3>URL of person - thats why face book was invented</h3>
+  <input id="picURL" type="text">
+  <h3>phone number</h3>
+  <input id="phonenumber" type="text">
+  <h3>email</h3>
+  <input id="email" type="text">
+
+
+
+  <ul>
+    <li id="list">people that you cared enough to add their contact </li>
+    <li id="person"></li>
+  </ul>
+
+
+    <button>add this person into your life</button>
+
+<script>
+  $(document).ready(() => {
+
+        $("button").click(() => {
+              const name = $("input#name").val();
+              const status= $("input#status").val();
+              const response = $("input#picURL").val();
+              const phonenumber = $("input#phonenumber").val();
+              const email = $("input#email").val();
+
+               if (person) {
+                $("#person").append(name + "<br>");
+                $("#person").append("she is my " + status + "<br>");
+                $("#person").append(phonenumber + "<br>");
+                $("#person").append(email + "<br>");
+                $("#person").append("<img src = '" + response + "'></img><br>")
+                $("#person").css('font-size', '30px', 'font-color', 'orange');
+              }
+        });
+  });
+</script>
+</body>
+</html>

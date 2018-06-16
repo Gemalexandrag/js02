@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html>
+     <head>
+       <link rel="icon" href="http://www.stickpng.com/assets/images/5895d2d7cba9841eabab6078.png">
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content= "width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     </head>
+  <body>
+     <center><h1>Mad Libs</h1></center>
+     <h4>Noun:</h4>
+     <input id="noun" type="text"/>
+     <h4>Verb:</h4>
+     <input id="verb" type="text"/>
+     <h4>Adjective:</h4>
+     <input id="adj" type="text"/>
+     <h4>Verb:</h4>
+     <input id="adverb" type="text"/>
+     <h4>Another Verb:</h4>
+     <input id="verb2" type="text"/><br><br><br>
+     <button type="button" class="btn btn-default">Generate Sentence</button><br><br>
+     <h5></h5>
+     <script>
+
+     $("button").click(()=>{
+   let noun = $("input#noun").val();
+   let adverb = $("input#adverb").val();
+   let adj = $("input#adj").val();
+   let verb = $("input#verb").val();
+   let verb2 = $("input#verb2").val();
+   let sentence = ``;
+   let sentence = `Do you hate ${noun}? I dislike it. it was very ${verb}. I got it from`
+   $("h5").html(sentence);
+   })
+   </script>
+     <style>
+        body{
+           background-image: url("https://uspstrackingtool.com/wp-content/uploads/2018/04/galaxy-background-338-1024x768.jpg");
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center center;
+        }
+        h1{
+           color: white;
+        }
+        h4{
+           color: white;
+        }
+        h5{
+           color: white;
+        }
+
+     </style>
+  </body>
+</html>
